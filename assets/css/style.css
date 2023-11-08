@@ -50,7 +50,7 @@ body {
 #title::after {
     position: absolute;
     content: '';
-    background-color: #16a34a;
+    background-color: rgb(29, 87, 173);
     width: 8rem;
     height: 3px;
     bottom: 0;
@@ -100,14 +100,15 @@ input-box label {
 }
 
 #calculate {
-    border:none;
+    border: 1px solid rgb(29, 87, 173);
     font-size: 1.25rem;
     font-weight: bold;
-    background-color: #16a34a;
+    background-color: rgb(29, 87, 173);
     color: #f8fafc;
     padding: 0.5rem 0;
     border-radius: 3px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 #result {
@@ -118,14 +119,14 @@ input-box label {
     padding: 0.75rem 0;
 }
 
-#bmi {
+#media {
     display: flex;
     align-items: center;
     flex-direction: column;
     font-size: 2.25rem;
 }
 
-#bmi span:last-child {
+#media span:last-child {
     font-size: 0.875rem;
     color: #cbd5e1
 }

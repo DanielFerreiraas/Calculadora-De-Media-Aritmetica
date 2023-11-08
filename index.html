@@ -19,32 +19,28 @@
         <section id="calculator">
             <form id="form">
                 <h1 id="title">
-                    Calculadora - IMC
+                    Calculadora Aritmética
                 </h1>
 
                 <div class="input-box">
-                    <label for="weight">
-                        Peso em Kg
+                    <label for="primeiraNota">
+                        Primeira Nota
                     </label>
                     <div class="input-field">
-                        <i class="fa-solid fa-weight-hanging"></i>
-                        <input type="number" id="weight" required>
-                        <span>
-                            Kg
-                        </span>
+                        <!-- <i class="fa-solid fa-weight-hanging"></i> -->
+                        <input type="number" id="primeiraNota" placeholder="digite a 1° nota" required min=0 max=10>
+                        
                     </div>
                 </div>
 
                 <div class="input-box">
-                    <label for="weight">
-                        Altura em metros
+                    <label for="primeiraNota">
+                        Segunda Nota
                     </label>
                     <div class="input-field">
-                        <i class="fa-solid fa-ruler"></i>
-                        <input type="number" step="0.01" id="height" name="" required>
-                        <span>
-                            m
-                        </span>
+                        <!-- <i class="fa-solid fa-ruler"></i> -->
+                        <input type="number"  id="segundaNota" placeholder="digite a 2° nota" required min= 0 max=10>
+                    
                     </div>
                 </div>
 
@@ -55,21 +51,15 @@
 
             <div id="infos" class="hidden">
                 <div id="result">
-                    <div id="bmi">
+                    <div id="media">
                         <span id="value"></span>
-                        <span>Seu IMC</span>
+                        <span>Sua Média</span>
                     </div>
                     <div id="description">
                         <span></span>
                     </div>
                 </div>
 
-                <div id="more_info">
-                    <a href="https://mundoeducacao.uol.com.br/saude-bem-estar/imc.htm">
-                        Mais informações sobre o IMC
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-                </div>
 
             </div>
         </section>
