@@ -3,10 +3,10 @@ const form = document.getElementById('form');
 form.addEventListener('submit', function (event) {
     event.preventDefault();
 
-    const weight = document.getElementById('weight').value;
-    const height = document.getElementById('height').value;
+    const primeiraNota = Number(document.getElementById('primeiraNota').value);
+    const segundaNota = Number(document.getElementById('segundaNota').value);
 
-    const bmi = (weight / (height * height)).toFixed(2);
+    const media = (((primeiraNota + segundaNota) / 2)).toFixed(2);
 
     const value = document.getElementById('value');
     let description = '';
@@ -15,22 +15,14 @@ form.addEventListener('submit', function (event) {
 
     document.getElementById('infos').classList.remove('hidden');
 
-    if (bmi < 18.5) {
-        description = 'Cuidadado! Você está abaixo do peso!'
-    } else if (bmi >= 18.5 && bmi <= 25) {
-        description = "Você está no peso ideal!";
+    if(media >= 7) {
+        description = "Parabéns você foi aprovado!!";
         value.classList.remove('attention');
         value.classList.add('normal');
-    } else if (bmi > 25 && bmi <= 30) {
-        description = "Cuidado! Você está com sobrepeso!";
-    } else if (bmi > 30 && bmi <= 35) {
-        description = "Cuidado! Você está com obesidade moderada!";
-    } else if (bmi > 35 && bmi <= 40) {
-        description = "Cuidado! Você está com obesidade severa!";
-    } else {
-        description = "Cuidado! Você está com obesidade morbida!";
+    } else if(media < 7){
+        description = "Infelizmente você foi reprovado!!";
     }
-    value.textContent = bmi.replace('.', ',');
+    value.textContent = media.replace('.', ',');
     document.getElementById('description').textContent = description
 
 })
