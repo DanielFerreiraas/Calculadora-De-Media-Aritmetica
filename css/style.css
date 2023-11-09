@@ -36,10 +36,22 @@ body {
     border-radius: 8px;
 }
 
+.btnNavegation{
+    border: none;
+    margin: 0;
+}
+.btnNavigation a{
+    padding: 2px;
+    border-radius: 2px;
+    background-color: #6C63FF;
+    text-decoration: none;
+    color: white;
+}
+
 #form {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 #title {
@@ -50,15 +62,20 @@ body {
 #title::after {
     position: absolute;
     content: '';
-    background-color: #16a34a;
-    width: 8rem;
+    background-color: #6C63FF;
+    width: 9.5rem;
     height: 3px;
     bottom: 0;
     left: 0;
     border-radius: 3px;
 }
 
-input-box label {
+.contentMedia {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box label {
     font-size: 1.1rem;
     color: #cbd5e1;
     font-weight: 500;
@@ -100,10 +117,10 @@ input-box label {
 }
 
 #calculate {
-    border:none;
+    border:1px solid #6C63FF;
     font-size: 1.25rem;
     font-weight: bold;
-    background-color: #16a34a;
+    background-color: #6C63FF;
     color: #f8fafc;
     padding: 0.5rem 0;
     border-radius: 3px;
